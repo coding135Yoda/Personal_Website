@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     element.addEventListener('mouseout', function () {
-      this.style.color = '#fff'; // Reset to default color
+      this.style.color = '#000'; // Reset to default color
     });
   });
 
