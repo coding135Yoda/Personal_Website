@@ -927,6 +927,11 @@ ul li {
     height: 40px;
     font-size: 20px;
 }
+.social-icon i {
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
   .section__container {
     text-align: center;
   }
