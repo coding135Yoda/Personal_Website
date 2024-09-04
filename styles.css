@@ -103,6 +103,60 @@ ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+/* social icons */
+.social-icon{
+  padding: 3rem;
+  display: flex; /* Use flexbox to arrange items in a row */
+  gap: 15px; /* Adjust spacing between icons */
+  justify-content: center; /* Centers the row within the container */
+}
+.fa-brands {
+  padding: 20px;
+  text-align: center;
+  border-radius: 50%; /* Adjust to 50% for a perfect circle */
+  font-size: 30px;
+  width: 50px;
+  height: 50px; /* Add height to make it a square */
+  display: flex; /* Use flexbox to center the icon */
+  gap: 15px;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #000000;
+  color: white;
+}
+
+.fa-github {
+  background: #4e4c4c;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-google {
+  background: #433cff;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ff00e1;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
 
 .content {
   display: flex;
@@ -626,26 +680,51 @@ ul li {
 .s__container {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   max-width: var(--max-width);
   margin: auto;
+  gap: 2px;
   padding: 4rem;
 }
-.c-container {
+.left{
+  background:#a855f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  padding: 4rem;
+}
+.heading {
+  display: flex; /* Use flexbox to arrange items in a row */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center the content horizontally */
+  gap: 10px; /* Spacing between images and text */
+  padding: 1rem; /* Optional padding for spacing */
+}
+
+.cnct_img {
+  width: 50px; /* Set the image size */
+  height: auto; /* Maintain aspect ratio */
+}
+.right {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 50%;
   padding: 4rem;
-
 }
 
-.c-container h2 {
+.heading h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 27px;
   color: #333;
   text-align: center;
+}
+.left p{
+  padding: 3px;
+  color: white;
+  font-size: 15px;
 }
 
 .form-group {
@@ -694,7 +773,9 @@ ul li {
   .section__container {
     padding: 1rem; /* Adjust padding for smaller screens */
   }
-
+  .cnct_img {
+    display: none; /* Hide images on smaller screens */
+  }
   .c-container {
     padding: 15px;
   }
@@ -744,6 +825,11 @@ ul li {
 }
 /* Media queries for responsiveness */
 @media (max-width: 750px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
   .section__container {
     text-align: center;
   }

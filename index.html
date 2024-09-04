@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init({
+      publicKey: "6CyF-OIRRrMRRiiMq",
+    });
+  })();
+  </script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Responsive Portfolio</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <nav>
@@ -38,11 +48,12 @@
             I'm <span>Saumya<br />a</span> Web Developer
           </h1>
           <p class="description">
-            “I find balance in the delicate interplay of analytical thinking and creative problem-solving. Each project shapes my path, with user research as my guiding light. Navigating through realms with minimal constraints, I embrace the flexibility to learn and unlearn, for therein lies the essence of innovation.”     
+            “I'm a Developer, I love to create beautiful and functional websites. I'm passionate about staying at the forefront of technology and learning new tools 
+            and techniques to enhance my craft. I thrive on challenges and enjoy tackling complex problems with creativity”     
           </p>
           <div class="action__btns">
             <button class="hire__me"> 
-              <a href="https://docs.google.com/document/d/1t6XwUXT_5uIidiNND2_3HQWiO7Fj_Hgf/edit?usp=sharing&ouid=115583327839692247555&rtpof=true&sd=true" download="Saumya_Tripathi" target="_blank">Hire ME</a></button>
+              <a href="https://www.linkedin.com/in/imsaumya-tripathi/" download="Saumya_Tripathi" target="_blank">Hire ME</a></button>
             <button class="portfolio">
               <a href="https://github.com/coding135Yoda" target="_blank">Github</a></button>
           </div>
@@ -73,7 +84,7 @@
         </div>
         <div class="service-block">
             <div class="service-icon">&#9733;</div>
-            <div class="service-name">Responsive websites</div>
+            <div class="service-name">Responsive Web Design</div>
         </div>
         <div class="service-block">
             <div class="service-icon">&#9733;</div>
@@ -82,6 +93,30 @@
         <div class="dashed-line"></div>
       </div>
       <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+          <h2 class="h3">Experience</h2>
+        </div>
+      
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">FullStack Developer at SRSAC</h4>
+            <span>2024</span>
+            <p class="timeline-text">
+              Developed the official website ensuring a user-friendly frontend. Connected and managed the database with SQL, and enhanced backend functionality by learning and implementing Django with Python.
+            </p>
+          </li>
+      
+          <!-- <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Junior Developer at XYZ Inc.</h4>
+            <span>2012 — 2015</span>
+            <p class="timeline-text">
+              Contributed to multiple projects, enhancing my skills in front-end and back-end development.
+            </p>
+          </li> -->
+        </ol>
         <div class="title-wrapper">
           <div class="icon-box">
             <ion-icon name="book-outline"></ion-icon>
@@ -118,30 +153,7 @@
           </li>
         </ol>
       
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="briefcase-outline"></ion-icon>
-          </div>
-          <h2 class="h3">Experience</h2>
-        </div>
-      
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">FullStack Developer at SRSAC</h4>
-            <span>2024</span>
-            <p class="timeline-text">
-              Developed the official website ensuring a user-friendly frontend. Connected and managed the database with SQL, and enhanced backend functionality by learning and implementing Django with Python.
-            </p>
-          </li>
-      
-          <!-- <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Junior Developer at XYZ Inc.</h4>
-            <span>2012 — 2015</span>
-            <p class="timeline-text">
-              Contributed to multiple projects, enhancing my skills in front-end and back-end development.
-            </p>
-          </li> -->
-        </ol>
+       
       </section>
 
     </section>
@@ -406,9 +418,25 @@
 
     <section id="contact" class="section c ">
       <div class="s__container ">
-        <div class="c-container">
+        <div class="c-container left">
+          <div class="heading">
+            <img src="Envelope.jpg" class="cnct_img">
+            <h2>Let's Connect!!</h2>
+            <img src="Envelope.jpg" class="cnct_img">
+          </div>
+          <p class="l_p">I'm always excited to connect with fellow professionals, industry experts, and anyone passionate about technology and innovation. Feel free to reach out if you'd like to discuss new opportunities, share insights, or just chat about our shared interests.</p>
+          <div class="social-icon">
+            <i href="#"  class="fa-brands fa-twitter"></i>
+            <i href="#"  class="fa-brands fa-linkedin"></i>  
+            <i href="#"  class="fa-brands fa-github"></i>
+            <i href="#"  class="fa-brands fa-google"></i>
+            <i href="#"  class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        
+        <div class="c-container right">
           <form id="contactForm">
-            <h2>Contact Us</h2>
+            
               <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" required>
@@ -429,7 +457,9 @@
           </form>
       </div>
       </div>
+      
     </section>
+    
     <script src="newindex.js"></script>
   </body>
 </html>

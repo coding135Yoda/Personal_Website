@@ -59,42 +59,27 @@ document.addEventListener("DOMContentLoaded", function () {
 // The JavaScript handles form validation and optionally sends the form data to a server using the Fetch API. You can replace 'https://your-server-endpoint.com/send-message' with the actual URL of your server endpoint.
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const contact = document.getElementById('contact').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  if (name && contact && email && message) {
-      alert('Message sent successfully!');
-
-      // Optionally, you can add code here to send the form data to a server
-      const formData = {
-          name: name,
-          contact: contact,
-          email: email,
-          message: message
-      };
-
-      fetch('https://your-server-endpoint.com/send-message', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-      })
-      .then(response => response.json())
-      .then(data => {
-          console.log('Success:', data);
-      })
-      .catch((error) => {
-          console.error('Error:', error);
-      });
-
-  } else {
-      alert('Please fill in all fields.');
-  }
+  sendMail();
 });
 
+function sendMail(){
+  var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+  };
 
+  const serviceID = "service_250sjkc";
+  const templateID = "template_69jdnp8";
+
+  emailjs.send(serviceID, templateID, params)
+  .then(res => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Your message sent successfully!!");
+  })
+  .catch(err => console.log(err));
+}
 
