@@ -1,3 +1,9 @@
+// forburger navbar 
+document.querySelectorAll('.nav-links li a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('check').checked = false;
+  });
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
