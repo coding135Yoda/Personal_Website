@@ -15,4 +15,4 @@
   - **Project Showcases**: Displayed your projects with images, descriptions, and links to GitHub and Live Demos.
 
 - **Deployment:**
-  - **Vercel Deployment**: Successfully deployed the portfolio website using Vercel, ensuring seamless hosting and quick access to updates.
+  - **Netlify Deployment**: Successfully deployed the portfolio website using Vercel, ensuring seamless hosting and quick access to updates.
